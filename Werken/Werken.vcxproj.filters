@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>0c87834b-9ef1-4840-924d-0e685ac2d267</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>8b4a7428-9eaa-436f-b991-15c287006c7c</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>781e688c-6d6a-4bbf-813a-9d18ec031238</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\SampleFpsTextRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{65f9db71-cd42-41c2-a160-cacfbce3482a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loaders">
+      <UniqueIdentifier>{ec233144-55bc-45df-9495-191a94e7ab6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textbased">
+      <UniqueIdentifier>{e6b18569-0974-4f4c-a79d-88cba5b26f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HaskiInfo">
+      <UniqueIdentifier>{b83a3757-9544-4c4e-a0b1-c77f8bf97d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HaskiInfo\Types">
+      <UniqueIdentifier>{47c68d92-67ec-4fd5-811f-989f1705dad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HaskiInfo\Operators">
+      <UniqueIdentifier>{f08a612b-ab7d-4640-9747-640e04a2ac11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HaskiInfo\haskiNode">
+      <UniqueIdentifier>{0817ebc0-36fd-420d-9fe0-5b8f82b91e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HaskiInfo\HaskiDatatypes">
+      <UniqueIdentifier>{4ec721e1-b7e9-49ed-8b5c-6e2bcea6074f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="WerkenMain.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="BitmapDrawer.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureLoader.cpp">
+      <Filter>Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBlock.cpp">
+      <Filter>Textbased</Filter>
+    </ClCompile>
+    <ClCompile Include="Loadhaski.cpp">
+      <Filter>HaskiInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="HaskiTypeBlock.cpp">
+      <Filter>HaskiInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="HaskiVar.cpp">
+      <Filter>HaskiInfo\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Haskioperator.cpp">
+      <Filter>HaskiInfo\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="HaskiBody.cpp">
+      <Filter>HaskiInfo\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="HaskiNode.cpp">
+      <Filter>HaskiInfo\haskiNode</Filter>
+    </ClCompile>
+    <ClCompile Include="HaskiDataType.cpp">
+      <Filter>HaskiInfo\HaskiDatatypes</Filter>
+    </ClCompile>
+    <ClCompile Include="HaskiValueMembers.cpp">
+      <Filter>HaskiInfo\HaskiDatatypes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="WerkenMain.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="BitmapDrawer.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoader.h">
+      <Filter>Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBlock.h">
+      <Filter>Textbased</Filter>
+    </ClInclude>
+    <ClInclude Include="Loadhaski.h">
+      <Filter>HaskiInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="HaskiTypeBlock.h">
+      <Filter>HaskiInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="HaskiVar.h">
+      <Filter>HaskiInfo\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Haskioperator.h">
+      <Filter>HaskiInfo\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="HaskiBody.h">
+      <Filter>HaskiInfo\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="HaskiNode.h">
+      <Filter>HaskiInfo\haskiNode</Filter>
+    </ClInclude>
+    <ClInclude Include="HaskiDataType.h">
+      <Filter>HaskiInfo\HaskiDatatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="HaskiValueMembers.h">
+      <Filter>HaskiInfo\HaskiDatatypes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
