@@ -49,7 +49,7 @@ void App::Initialize(CoreApplicationView^ applicationView)
 	CoreApplication::Resuming +=
 		ref new EventHandler<Platform::Object^>(this, &App::OnResuming);
 
-	// At this point we have access to the device. 
+	// At this point we have access to the device.
 	// We can create the device-dependent resources.
 	m_deviceResources = std::make_shared<DX::DeviceResources>();
 }
@@ -57,13 +57,13 @@ void App::Initialize(CoreApplicationView^ applicationView)
 // Called when the CoreWindow object is created (or re-created).
 void App::SetWindow(CoreWindow^ window)
 {
-	window->SizeChanged += 
+	window->SizeChanged +=
 		ref new TypedEventHandler<CoreWindow^, WindowSizeChangedEventArgs^>(this, &App::OnWindowSizeChanged);
 
 	window->VisibilityChanged +=
 		ref new TypedEventHandler<CoreWindow^, VisibilityChangedEventArgs^>(this, &App::OnVisibilityChanged);
 
-	window->Closed += 
+	window->Closed +=
 		ref new TypedEventHandler<CoreWindow^, CoreWindowEventArgs^>(this, &App::OnWindowClosed);
 
 	DisplayInformation^ currentDisplayInformation = DisplayInformation::GetForCurrentView();
@@ -136,13 +136,13 @@ void App::OnSuspending(Platform::Object^ sender, SuspendingEventArgs^ args)
 	SuspendingDeferral^ deferral = args->SuspendingOperation->GetDeferral();
 
 	create_task([this, deferral]()
-	{
-        m_deviceResources->Trim();
+		{
+			m_deviceResources->Trim();
 
-		// Insert your code here.
+			// Insert your code here.
 
-		deferral->Complete();
-	});
+			deferral->Complete();
+		});
 }
 
 void App::OnResuming(Platform::Object^ sender, Platform::Object^ args)

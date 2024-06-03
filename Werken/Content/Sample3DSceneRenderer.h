@@ -21,7 +21,6 @@ namespace Werken
 		void StopTracking();
 		bool IsTracking() { return m_tracking; }
 
-
 	private:
 		void Rotate(float radians);
 
@@ -47,4 +46,3 @@ namespace Werken
 		bool	m_tracking;
 	};
 }
-

@@ -2,7 +2,6 @@
 #include "WerkenMain.h"
 #include "Common\DirectXHelper.h"
 
-
 using namespace Werken;
 using namespace Windows::Foundation;
 using namespace Windows::System::Threading;
@@ -35,27 +34,27 @@ WerkenMain::~WerkenMain()
 }
 
 // Updates application state when the window size changes (e.g. device orientation change)
-void WerkenMain::CreateWindowSizeDependentResources() 
+void WerkenMain::CreateWindowSizeDependentResources()
 {
 	// TODO: Replace this with the size-dependent initialization of your app's content.
 	m_sceneRenderer->CreateWindowSizeDependentResources();
 }
 
 // Updates the application state once per frame.
-void WerkenMain::Update() 
+void WerkenMain::Update()
 {
 	// Update scene objects.
 	m_timer.Tick([&]()
-	{
-		// TODO: Replace this with your app's content update functions.
-		m_sceneRenderer->Update(m_timer);
-		m_fpsTextRenderer->Update(m_timer);
-	});
+		{
+			// TODO: Replace this with your app's content update functions.
+			m_sceneRenderer->Update(m_timer);
+			m_fpsTextRenderer->Update(m_timer);
+		});
 }
 
 // Renders the current frame according to the current application state.
 // Returns true if the frame was rendered and is ready to be displayed.
-bool WerkenMain::Render() 
+bool WerkenMain::Render()
 {
 	// Don't try to render anything before the first Update.
 	if (m_timer.GetFrameCount() == 0)
@@ -70,7 +69,7 @@ bool WerkenMain::Render()
 	context->RSSetViewports(1, &viewport);
 
 	// Reset render targets to the screen.
-	ID3D11RenderTargetView *const targets[1] = { m_deviceResources->GetBackBufferRenderTargetView() };
+	ID3D11RenderTargetView* const targets[1] = { m_deviceResources->GetBackBufferRenderTargetView() };
 	context->OMSetRenderTargets(1, targets, m_deviceResources->GetDepthStencilView());
 
 	// Clear the back buffer and depth stencil view.
@@ -84,8 +83,7 @@ bool WerkenMain::Render()
 	m_deviceResources->GetD2DDeviceContext()->BeginDraw();
 	BitmapDrawer m_bitmapDrawer = BitmapDrawer(m_deviceResources->GetD2DDeviceContext(), m_deviceResources->GetWicImagingFactory());
 
-
-	//the draw method 
+	//the draw method
 	//m_bitmapDrawer.DrawBitmap(mappa.tiles.at(row).at(col).Pic->d2dBitmap, D2D1::RectF(left, top, left + spriteSize, top + spriteSize));
 
 	m_deviceResources->GetD2DDeviceContext()->EndDraw();
